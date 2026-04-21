@@ -1,0 +1,58 @@
+# Dependencies
+node_modules/
+jspm_packages/
+.npm/
+
+# Flutter/Dart
+.dart_tool/
+.pub-cache/
+.packages
+.flutter-plugins
+.flutter-plugins-dependencies
+build/
+*.lock
+
+# Java/Android
+.gradle/
+local.properties
+*.apk
+*.aab
+*.keystore
+*.jks
+
+# iOS/macOS
+Pods/
+Podfile.lock
+DerivedData/
+*.pbxuser
+*.mode1v3
+*.mode2v3
+*.perspectivev3
+xcuserdata/
+*.xccheckout
+*.xcscmblueprint
+*.moved-aside
+*.xcuserstate
+*.xcresult
+
+# Environment & Secrets
+.env
+.env.*
+secrets.json
+
+# IDEs
+.vscode/
+.idea/
+*.iml
+*.swp
+*.swo
+
+# Large files & Archives
+*.zip
+*.tar.gz
+*.rar
+chaishots_complete_project.zip
+
+# System
+Thumbs.db
+.DS_Store

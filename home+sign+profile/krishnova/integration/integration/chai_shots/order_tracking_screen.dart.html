@@ -1,0 +1,122 @@
+<html>
+<head>
+<title>order_tracking_screen.dart</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #bcbec4;}
+.s1 { color: #6aab73;}
+.s2 { color: #bcbec4;}
+.s3 { color: #cf8e6d;}
+.s4 { color: #2aacb8;}
+</style>
+</head>
+<body bgcolor="#191a1c">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#606060" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+order_tracking_screen.dart</font>
+</center></td></tr></table>
+<pre><span class="s0">import </span><span class="s1">'package:flutter/material.dart'</span><span class="s2">;</span>
+<span class="s0">import </span><span class="s1">'../widgets/custom_button.dart'</span><span class="s2">;</span>
+
+<span class="s3">class </span><span class="s0">OrderTrackingScreen </span><span class="s3">extends </span><span class="s0">StatelessWidget </span><span class="s2">{</span>
+  <span class="s3">const </span><span class="s0">OrderTrackingScreen</span><span class="s2">({</span><span class="s3">super</span><span class="s2">.</span><span class="s0">key</span><span class="s2">});</span>
+
+  <span class="s0">@override</span>
+  <span class="s0">Widget build</span><span class="s2">(</span><span class="s0">BuildContext context</span><span class="s2">) {</span>
+    <span class="s3">return </span><span class="s0">Scaffold</span><span class="s2">(</span>
+      <span class="s0">appBar</span><span class="s2">: </span><span class="s0">AppBar</span><span class="s2">(</span>
+        <span class="s0">title</span><span class="s2">: </span><span class="s3">const </span><span class="s0">Text</span><span class="s2">(</span><span class="s1">'Track Order'</span><span class="s2">),</span>
+      <span class="s2">),</span>
+      <span class="s0">body</span><span class="s2">: </span><span class="s0">Padding</span><span class="s2">(</span>
+        <span class="s0">padding</span><span class="s2">: </span><span class="s3">const </span><span class="s0">EdgeInsets</span><span class="s2">.</span><span class="s0">all</span><span class="s2">(</span><span class="s4">24.0</span><span class="s2">),</span>
+        <span class="s0">child</span><span class="s2">: </span><span class="s0">Column</span><span class="s2">(</span>
+          <span class="s0">crossAxisAlignment</span><span class="s2">: </span><span class="s0">CrossAxisAlignment</span><span class="s2">.</span><span class="s0">start</span><span class="s2">,</span>
+          <span class="s0">children</span><span class="s2">: [</span>
+            <span class="s0">Container</span><span class="s2">(</span>
+              <span class="s0">padding</span><span class="s2">: </span><span class="s3">const </span><span class="s0">EdgeInsets</span><span class="s2">.</span><span class="s0">all</span><span class="s2">(</span><span class="s4">20</span><span class="s2">),</span>
+              <span class="s0">decoration</span><span class="s2">: </span><span class="s0">BoxDecoration</span><span class="s2">(</span>
+                <span class="s0">color</span><span class="s2">: </span><span class="s0">Colors</span><span class="s2">.</span><span class="s0">white</span><span class="s2">,</span>
+                <span class="s0">borderRadius</span><span class="s2">: </span><span class="s0">BorderRadius</span><span class="s2">.</span><span class="s0">circular</span><span class="s2">(</span><span class="s4">20</span><span class="s2">),</span>
+                <span class="s0">boxShadow</span><span class="s2">: [</span>
+                  <span class="s0">BoxShadow</span><span class="s2">(</span>
+                    <span class="s0">color</span><span class="s2">: </span><span class="s0">Colors</span><span class="s2">.</span><span class="s0">black</span><span class="s2">.</span><span class="s0">withOpacity</span><span class="s2">(</span><span class="s4">0.05</span><span class="s2">),</span>
+                    <span class="s0">blurRadius</span><span class="s2">: </span><span class="s4">10</span><span class="s2">,</span>
+                  <span class="s2">),</span>
+                <span class="s2">],</span>
+              <span class="s2">),</span>
+              <span class="s0">child</span><span class="s2">: </span><span class="s0">Row</span><span class="s2">(</span>
+                <span class="s0">children</span><span class="s2">: [</span>
+                  <span class="s3">const </span><span class="s0">Icon</span><span class="s2">(</span><span class="s0">Icons</span><span class="s2">.</span><span class="s0">receipt_long</span><span class="s2">, </span><span class="s0">size</span><span class="s2">: </span><span class="s4">40</span><span class="s2">, </span><span class="s0">color</span><span class="s2">: </span><span class="s0">Color</span><span class="s2">(</span><span class="s4">0xFF6F4E37</span><span class="s2">)),</span>
+                  <span class="s3">const </span><span class="s0">SizedBox</span><span class="s2">(</span><span class="s0">width</span><span class="s2">: </span><span class="s4">16</span><span class="s2">),</span>
+                  <span class="s0">Column</span><span class="s2">(</span>
+                    <span class="s0">crossAxisAlignment</span><span class="s2">: </span><span class="s0">CrossAxisAlignment</span><span class="s2">.</span><span class="s0">start</span><span class="s2">,</span>
+                    <span class="s0">children</span><span class="s2">: [</span>
+                      <span class="s0">Text</span><span class="s2">(</span><span class="s1">'Order #CS-1234'</span><span class="s2">, </span><span class="s0">style</span><span class="s2">: </span><span class="s0">Theme</span><span class="s2">.</span><span class="s0">of</span><span class="s2">(</span><span class="s0">context</span><span class="s2">).</span><span class="s0">textTheme</span><span class="s2">.</span><span class="s0">titleMedium</span><span class="s2">?.</span><span class="s0">copyWith</span><span class="s2">(</span><span class="s0">fontWeight</span><span class="s2">: </span><span class="s0">FontWeight</span><span class="s2">.</span><span class="s0">bold</span><span class="s2">)),</span>
+                      <span class="s3">const </span><span class="s0">Text</span><span class="s2">(</span><span class="s1">'Placed on 12 Oct, 10:30 AM'</span><span class="s2">),</span>
+                    <span class="s2">],</span>
+                  <span class="s2">),</span>
+                <span class="s2">],</span>
+              <span class="s2">),</span>
+            <span class="s2">),</span>
+            <span class="s3">const </span><span class="s0">SizedBox</span><span class="s2">(</span><span class="s0">height</span><span class="s2">: </span><span class="s4">32</span><span class="s2">),</span>
+            <span class="s3">const </span><span class="s0">Text</span><span class="s2">(</span><span class="s1">'Status'</span><span class="s2">, </span><span class="s0">style</span><span class="s2">: </span><span class="s0">TextStyle</span><span class="s2">(</span><span class="s0">fontSize</span><span class="s2">: </span><span class="s4">18</span><span class="s2">, </span><span class="s0">fontWeight</span><span class="s2">: </span><span class="s0">FontWeight</span><span class="s2">.</span><span class="s0">bold</span><span class="s2">)),</span>
+            <span class="s3">const </span><span class="s0">SizedBox</span><span class="s2">(</span><span class="s0">height</span><span class="s2">: </span><span class="s4">24</span><span class="s2">),</span>
+            <span class="s0">_buildStep</span><span class="s2">(</span><span class="s0">context</span><span class="s2">, </span><span class="s1">'Order Confirmed'</span><span class="s2">, </span><span class="s1">'Your order has been received'</span><span class="s2">, </span><span class="s3">true</span><span class="s2">, </span><span class="s3">true</span><span class="s2">),</span>
+            <span class="s0">_buildStep</span><span class="s2">(</span><span class="s0">context</span><span class="s2">, </span><span class="s1">'Preparing'</span><span class="s2">, </span><span class="s1">'Your chai is being brewed with love'</span><span class="s2">, </span><span class="s3">true</span><span class="s2">, </span><span class="s3">true</span><span class="s2">),</span>
+            <span class="s0">_buildStep</span><span class="s2">(</span><span class="s0">context</span><span class="s2">, </span><span class="s1">'Out for Delivery'</span><span class="s2">, </span><span class="s1">'The delivery partner is on the way'</span><span class="s2">, </span><span class="s3">false</span><span class="s2">, </span><span class="s3">true</span><span class="s2">),</span>
+            <span class="s0">_buildStep</span><span class="s2">(</span><span class="s0">context</span><span class="s2">, </span><span class="s1">'Delivered'</span><span class="s2">, </span><span class="s1">'Enjoy your ChaiShots!'</span><span class="s2">, </span><span class="s3">false</span><span class="s2">, </span><span class="s3">false</span><span class="s2">),</span>
+            <span class="s3">const </span><span class="s0">Spacer</span><span class="s2">(),</span>
+            <span class="s0">SizedBox</span><span class="s2">(</span>
+              <span class="s0">width</span><span class="s2">: </span><span class="s0">double</span><span class="s2">.</span><span class="s0">infinity</span><span class="s2">,</span>
+              <span class="s0">child</span><span class="s2">: </span><span class="s0">CustomButton</span><span class="s2">(</span>
+                <span class="s0">text</span><span class="s2">: </span><span class="s1">'Back to Home'</span><span class="s2">,</span>
+                <span class="s0">onPressed</span><span class="s2">: () {</span>
+                  <span class="s0">Navigator</span><span class="s2">.</span><span class="s0">of</span><span class="s2">(</span><span class="s0">context</span><span class="s2">).</span><span class="s0">popUntil</span><span class="s2">((</span><span class="s0">route</span><span class="s2">) =&gt; </span><span class="s0">route</span><span class="s2">.</span><span class="s0">isFirst</span><span class="s2">);</span>
+                <span class="s2">},</span>
+              <span class="s2">),</span>
+            <span class="s2">),</span>
+          <span class="s2">],</span>
+        <span class="s2">),</span>
+      <span class="s2">),</span>
+    <span class="s2">);</span>
+  <span class="s2">}</span>
+
+  <span class="s0">Widget _buildStep</span><span class="s2">(</span><span class="s0">BuildContext context</span><span class="s2">, </span><span class="s0">String title</span><span class="s2">, </span><span class="s0">String subtitle</span><span class="s2">, </span><span class="s0">bool isCompleted</span><span class="s2">, </span><span class="s0">bool showLine</span><span class="s2">) {</span>
+    <span class="s3">return </span><span class="s0">Row</span><span class="s2">(</span>
+      <span class="s0">crossAxisAlignment</span><span class="s2">: </span><span class="s0">CrossAxisAlignment</span><span class="s2">.</span><span class="s0">start</span><span class="s2">,</span>
+      <span class="s0">children</span><span class="s2">: [</span>
+        <span class="s0">Column</span><span class="s2">(</span>
+          <span class="s0">children</span><span class="s2">: [</span>
+            <span class="s0">Container</span><span class="s2">(</span>
+              <span class="s0">width</span><span class="s2">: </span><span class="s4">20</span><span class="s2">,</span>
+              <span class="s0">height</span><span class="s2">: </span><span class="s4">20</span><span class="s2">,</span>
+              <span class="s0">decoration</span><span class="s2">: </span><span class="s0">BoxDecoration</span><span class="s2">(</span>
+                <span class="s0">color</span><span class="s2">: </span><span class="s0">isCompleted </span><span class="s2">? </span><span class="s3">const </span><span class="s0">Color</span><span class="s2">(</span><span class="s4">0xFF6F4E37</span><span class="s2">) : </span><span class="s0">Colors</span><span class="s2">.</span><span class="s0">grey</span><span class="s2">[</span><span class="s4">300</span><span class="s2">],</span>
+                <span class="s0">shape</span><span class="s2">: </span><span class="s0">BoxShape</span><span class="s2">.</span><span class="s0">circle</span><span class="s2">,</span>
+              <span class="s2">),</span>
+              <span class="s0">child</span><span class="s2">: </span><span class="s0">isCompleted </span><span class="s2">? </span><span class="s3">const </span><span class="s0">Icon</span><span class="s2">(</span><span class="s0">Icons</span><span class="s2">.</span><span class="s0">check</span><span class="s2">, </span><span class="s0">size</span><span class="s2">: </span><span class="s4">12</span><span class="s2">, </span><span class="s0">color</span><span class="s2">: </span><span class="s0">Colors</span><span class="s2">.</span><span class="s0">white</span><span class="s2">) : </span><span class="s3">null</span><span class="s2">,</span>
+            <span class="s2">),</span>
+            <span class="s3">if </span><span class="s2">(</span><span class="s0">showLine</span><span class="s2">)</span>
+              <span class="s0">Container</span><span class="s2">(</span>
+                <span class="s0">width</span><span class="s2">: </span><span class="s4">2</span><span class="s2">,</span>
+                <span class="s0">height</span><span class="s2">: </span><span class="s4">50</span><span class="s2">,</span>
+                <span class="s0">color</span><span class="s2">: </span><span class="s0">isCompleted </span><span class="s2">? </span><span class="s3">const </span><span class="s0">Color</span><span class="s2">(</span><span class="s4">0xFF6F4E37</span><span class="s2">) : </span><span class="s0">Colors</span><span class="s2">.</span><span class="s0">grey</span><span class="s2">[</span><span class="s4">300</span><span class="s2">],</span>
+              <span class="s2">),</span>
+          <span class="s2">],</span>
+        <span class="s2">),</span>
+        <span class="s3">const </span><span class="s0">SizedBox</span><span class="s2">(</span><span class="s0">width</span><span class="s2">: </span><span class="s4">16</span><span class="s2">),</span>
+        <span class="s0">Column</span><span class="s2">(</span>
+          <span class="s0">crossAxisAlignment</span><span class="s2">: </span><span class="s0">CrossAxisAlignment</span><span class="s2">.</span><span class="s0">start</span><span class="s2">,</span>
+          <span class="s0">children</span><span class="s2">: [</span>
+            <span class="s0">Text</span><span class="s2">(</span><span class="s0">title</span><span class="s2">, </span><span class="s0">style</span><span class="s2">: </span><span class="s0">TextStyle</span><span class="s2">(</span><span class="s0">fontWeight</span><span class="s2">: </span><span class="s0">FontWeight</span><span class="s2">.</span><span class="s0">bold</span><span class="s2">, </span><span class="s0">color</span><span class="s2">: </span><span class="s0">isCompleted </span><span class="s2">? </span><span class="s0">Colors</span><span class="s2">.</span><span class="s0">black </span><span class="s2">: </span><span class="s0">Colors</span><span class="s2">.</span><span class="s0">grey</span><span class="s2">)),</span>
+            <span class="s0">Text</span><span class="s2">(</span><span class="s0">subtitle</span><span class="s2">, </span><span class="s0">style</span><span class="s2">: </span><span class="s0">TextStyle</span><span class="s2">(</span><span class="s0">color</span><span class="s2">: </span><span class="s0">Colors</span><span class="s2">.</span><span class="s0">grey</span><span class="s2">[</span><span class="s4">600</span><span class="s2">], </span><span class="s0">fontSize</span><span class="s2">: </span><span class="s4">12</span><span class="s2">)),</span>
+          <span class="s2">],</span>
+        <span class="s2">),</span>
+      <span class="s2">],</span>
+    <span class="s2">);</span>
+  <span class="s2">}</span>
+<span class="s2">}</span>
+</pre>
+</body>
+</html>

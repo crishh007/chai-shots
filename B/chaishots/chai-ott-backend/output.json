@@ -1,0 +1,29 @@
+[
+  {
+    "_id": "69c4da98d9655b0c4ab3a5f5",
+    "title": "episode 2",
+    "seriesId": "69c3b8bab05cc2a94ffb9133",
+    "videoUrl": "https://res.cloudinary.com/dp51uud9l/video/upload/v1774508692/chai-ott/pgd077zuw3laouegwcng.mp4",
+    "createdAt": "2026-03-26T07:04:56.061Z",
+    "updatedAt": "2026-03-26T07:04:56.061Z",
+    "__v": 0
+  },
+  {
+    "_id": "69c3b8e6b05cc2a94ffb9138",
+    "title": "episode 1",
+    "seriesId": "69c3b8bab05cc2a94ffb9133",
+    "videoUrl": "https://res.cloudinary.com/dp51uud9l/video/upload/v1774434533/chai-ott/v1uxjubo2giwxr3ppnk4.mp4",
+    "createdAt": "2026-03-25T10:28:54.883Z",
+    "updatedAt": "2026-03-25T10:28:54.883Z",
+    "__v": 0
+  },
+  {
+    "_id": "69c3b84fb05cc2a94ffb912a",
+    "title": "episode1",
+    "seriesId": "69c3b83ab05cc2a94ffb9125",
+    "videoUrl": "https://res.cloudinary.com/dp51uud9l/video/upload/v1774434382/chai-ott/yir3uyg4yahnpjizxpvr.mp4",
+    "createdAt": "2026-03-25T10:26:23.306Z",
+    "updatedAt": "2026-03-25T10:26:23.306Z",
+    "__v": 0
+  }
+]

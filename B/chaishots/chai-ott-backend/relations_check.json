@@ -1,0 +1,29 @@
+{
+  "series": [
+    {
+      "id": "69c3b83ab05cc2a94ffb9125",
+      "title": "frnds"
+    },
+    {
+      "id": "69c3b8bab05cc2a94ffb9133",
+      "title": "love today"
+    }
+  ],
+  "episodes": [
+    {
+      "id": "69c3b84fb05cc2a94ffb912a",
+      "title": "episode1",
+      "seriesId": "69c3b83ab05cc2a94ffb9125"
+    },
+    {
+      "id": "69c3b8e6b05cc2a94ffb9138",
+      "title": "episode 1",
+      "seriesId": "69c3b8bab05cc2a94ffb9133"
+    },
+    {
+      "id": "69c4da98d9655b0c4ab3a5f5",
+      "title": "episode 2",
+      "seriesId": "69c3b8bab05cc2a94ffb9133"
+    }
+  ]
+}
