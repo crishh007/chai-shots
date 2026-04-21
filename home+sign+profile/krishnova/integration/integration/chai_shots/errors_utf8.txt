@@ -1,0 +1,12 @@
+error - Target of URI doesn't exist: 'package:video_player/video_player.dart' - lib\screens\home\home_page.dart:3:8 - uri_does_not_exist
+error - Undefined class 'VideoPlayerController' - lib\screens\home\home_page.dart:1248:3 - undefined_class
+error - Undefined name 'VideoPlayerController' - lib\screens\home\home_page.dart:1260:19 - undefined_identifier
+error - The method 'VideoPlayer' isn't defined for the type '_CarouselVideoPlayerState' - lib\screens\home\home_page.dart:1317:22 - undefined_method
+error - Undefined class 'VideoPlayerController' - lib\screens\home\home_page.dart:1361:3 - undefined_class
+error - Undefined name 'VideoPlayerController' - lib\screens\home\home_page.dart:1366:19 - undefined_identifier
+error - The method 'VideoPlayer' isn't defined for the type '_VideoThumbnailState' - lib\screens\home\home_page.dart:1392:16 - undefined_method
+error - The method 'VideoPlayer' isn't defined for the type '_VideoThumbnailState' - lib\screens\home\home_page.dart:1400:16 - undefined_method
+error - Undefined class 'VideoPlayerController' - lib\screens\home\home_page.dart:1498:3 - undefined_class
+error - Undefined name 'VideoPlayerController' - lib\screens\home\home_page.dart:1503:19 - undefined_identifier
+error - The method 'VideoPlayer' isn't defined for the type '_VideoPlayerPageState' - lib\screens\home\home_page.dart:1533:24 - undefined_method
+error - The name 'MyApp' isn't a class - test\widget_test.dart:16:35 - creation_with_non_type
